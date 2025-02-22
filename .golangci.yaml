@@ -1,0 +1,10 @@
+linters:
+  enable:
+    - asciicheck
+    - godot
+    - cyclop
+    - mnd
+
+linters-settings:
+  cyclop:
+    max-complexity: 5

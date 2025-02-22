@@ -1,0 +1,68 @@
+{
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "description": "A RESTful API to manage Harbors.",
+    "title": "Harbor Service API",
+    "contact": {
+      "name": "Tiago Melo",
+      "email": "tiagoharris@gmail.com"
+    },
+    "version": "0.0.1"
+  },
+  "paths": {
+    "/api/v1/harbors": {
+      "post": {
+        "description": "This endpoint receives a JSON object containing multiple harbor entries, where each key is the UN/LOCODE\nand the value is the harbor's details. It processes the input **streaming-style** for efficiency, ensuring\nthat even large files do not exhaust memory. The service **validates** the structure of each harbor before\nattempting to insert or update it in the database.",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "harbors"
+        ],
+        "summary": "Upsert harbors by either creating new entries or updating existing ones.",
+        "operationId": "UpsertHarbor",
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {}
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/responses/upsertHarborResponse"
+          },
+          "400": {
+            "$ref": "#/responses/badRequestResponse"
+          },
+          "500": {
+            "$ref": "#/responses/internalServerErrorResponse"
+          }
+        }
+      }
+    }
+  },
+  "responses": {
+    "badRequestResponse": {
+      "description": ""
+    },
+    "internalServerErrorResponse": {
+      "description": ""
+    },
+    "upsertHarborResponse": {
+      "description": ""
+    }
+  }
+}

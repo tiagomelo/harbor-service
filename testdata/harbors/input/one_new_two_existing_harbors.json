@@ -1,0 +1,43 @@
+{
+    "AEAJM": {
+      "name": "Ajman",
+      "city": "Ajman",
+      "country": "United Arab Emirates",
+      "alias": [],
+      "regions": [],
+      "coordinates": [55.5136433, 25.4052165],
+      "province": "Ajman",
+      "timezone": "Asia/Dubai",
+      "unlocs": ["AEAJM"],
+      "code": "52000"
+    },
+    "AEDXB": {
+      "name": "Dubai",
+      "coordinates": [
+        55.27,
+        25.25
+      ],
+      "city": "Dubai",
+      "province": "Dubayy [Dubai]",
+      "country": "United Arab Emirates",
+      "alias": [],
+      "regions": [],
+      "timezone": "Asia/Dubai",
+      "unlocs": [
+        "AEDXB"
+      ],
+      "code": "52005"
+    },
+    "USLAX": {
+      "name": "Los Angeles",
+      "city": "Los Angeles",
+      "country": "United States",
+      "alias": [],
+      "regions": [],
+      "coordinates": [-118.2437, 34.0522],
+      "province": "California",
+      "timezone": "America/Los_Angeles",
+      "unlocs": ["USLAX"],
+      "code": "53001"
+    }
+}
