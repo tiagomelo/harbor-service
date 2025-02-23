@@ -19,6 +19,15 @@ It aims to show how to handle JSON streaming in an efficient way.
 - Uses [govulncheck](https://pkg.go.dev/golang.org/x/vuln/cmd/govulncheck) for known vulnerabilities check.
 - Ensures 100% test coverage, including both unit and integration tests.
 
+## benchmark
+
+Visit [benchmark](./BENCHMARK.md) for more info.
+
+## dependencies
+
+- [Go](https://go.dev)
+- [Docker](https://www.docker.com), for linter, swagger, and if you want to run the dockerized version of the service
+
 ## endpoint
 
 `POST api/v1/harbors`
